@@ -17,7 +17,12 @@ def multiplikation():
 
 def division():
     zahl1 = float(input('Geben Sie den Dividend ein: '))
-    zahl2 = float(input('Geben Sie den Divisor ein: '))
+    zahl2 = 0
+    while zahl2 == 0:
+        zahl2 = float(input('Geben Sie den Divisor ein: '))
+        if zahl2 == 0:
+            print(f'Division durch null is nicht definiert.')
+
     print (f'Quotient: {zahl1 / zahl2}')
 
 def potenzieren():
